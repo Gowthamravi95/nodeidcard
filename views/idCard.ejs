@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" >
+
+    <style>
+        
+
+body {
+  background-color: #d7d6d3;
+  font-family:'verdana';
+}
+.id-card-holder {
+  width: 225px;
+    padding: 4px;
+    margin: 0 auto;
+    background-color: #1f1f1f;
+    border-radius: 5px;
+    position: relative;
+}
+.id-card-holder:after {
+    content: '';
+    width: 7px;
+    display: block;
+    background-color: #0a0a0a;
+    height: 100px;
+    position: absolute;
+    top: 105px;
+    border-radius: 0 5px 5px 0;
+}
+.id-card-holder:before {
+    content: '';
+    width: 7px;
+    display: block;
+    background-color: #0a0a0a;
+    height: 100px;
+    position: absolute;
+    top: 105px;
+    left: 222px;
+    border-radius: 5px 0 0 5px;
+}
+.id-card {
+  height: 350px;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 1.5px 0px #b9b9b9;
+}
+.id-card img {
+  margin: 0 auto;
+}
+.header img {
+  width: 100px;
+    margin-top: 15px;
+}
+.photo img {
+  width: 80px;
+    margin-top: 15px;
+}
+h2 {
+  font-size: 15px;
+  margin: 5px 0;
+}
+h3 {
+  font-size: 9px;
+  font-weight: 300;
+text-align: start;
+}
+h3 span{
+    font-size: 12px;
+    font-weight: 500;
+}
+.qr-code img {
+  width: 50px;
+}
+p {
+  font-size: 11px;
+  margin: 2px;
+}
+.id-card-hook {
+  background-color: #000;
+    width: 70px;
+    margin: 0 auto;
+    height: 15px;
+    border-radius: 5px 5px 0 0;
+}
+.id-card-hook:after {
+  content: '';
+    background-color: #d7d6d3;
+    width: 47px;
+    height: 6px;
+    display: block;
+    margin: 0px auto;
+    position: relative;
+    top: 6px;
+    border-radius: 4px;
+}
+.id-card-tag-strip {
+  width: 45px;
+    height: 40px;
+    background-color: #0950ef;
+    margin: 0 auto;
+    border-radius: 5px;
+    position: relative;
+    top: 9px;
+    z-index: 1;
+    border: 1px solid #0041ad;
+}
+.id-card-tag-strip:after {
+  content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #c1c1c1;
+    position: relative;
+    top: 10px;
+}
+.id-card-tag {
+  width: 0;
+  height: 0;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-top: 100px solid #0958db;
+  margin: -10px auto -30px auto;
+}
+.id-card-tag:after {
+  content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 50px solid #d7d6d3;
+    margin: 40px 25px;
+    position: relative;
+    top: -130px;
+    left: -50px;
+}
+
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class=" col-sm-6">
+            <div class="id-card-tag"></div>
+            <div class="id-card-tag-strip"></div>
+            <div class="id-card-hook"></div>
+            <div class="id-card-holder">
+              <div class="id-card">
+                <div class="header">
+                  <img src="./assets/images/muthramtest.webp">
+                </div>
+                <h3 style="visibility:hidden;"> adv</h3>
+               
+                <h2>"<%= student.firstname %>"</h2>
+                <p>Student of WebDSchool</p>
+                <h3 style="visibility:hidden;"> adv</h3>
+
+                <hr>
+
+                <h3>Batch Name : <span>WDD135</span></h3>
+                <h3>Course Type : <span>Online</span></h3>
+                <h3>Course Name : <span>New Age Flim Editing</span></h3>
+                <h3 style="visibility:hidden;"> adv</h3>
+          
+              </div>
+            </div>
+        </div>
+        <div class=" col-sm-6">
+            <div class="id-card-tag"></div>
+  <div class="id-card-tag-strip"></div>
+  <div class="id-card-hook"></div>
+  <div class="id-card-holder">
+    
+    <div class="id-card">
+        <h3 style="visibility:hidden;"> adv</h3>
+
+        <h3>Mobile : <span>81226 58784</span></h3>
+        <h3>Email Id : <span>user@gmail.com</span></h3>
+        <h3>D.O.B : <span>12/8/2002</span></h3>
+        <h3>Address : <span style="padding:10px 0px 10px 48px; margin-top: -22px;  font-size: 10px; display: block;">HOUSE,4th Floor, TC 11/729(4), Division Office Road
+            Near PMG Junction, Thiruvananthapuram Kerala, India 695033</span></h3>
+      <hr>
+      
+      
+
+      <div class="header">
+        <img src="./assets/images/ICON.webp" style="width: 70px ; margin-top: 0px;">
+      </div>
+    
+      <p style="font-size: 8px;"> Web D School, No.30, 1st floor, SSR Pankajam Towers, Arunachalam Road, above Heaven Greens Supermarket, saligramam,
+    </p>
+
+    </div>
+    </div>
+</div>
+        </div>
+    </div>
+</div>
+
+ 
+  
+  
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" ></script>
+
+</body>
+</html>
